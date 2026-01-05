@@ -1,0 +1,9 @@
+# Dependencies and related stuff
+.terraform
+
+# Sensitive information that should not be commited
+.auto.tfvars
+
+# State files can include sensitive information and should not be commited
+terraform.tfstate
+terraform.tfstate.backup
