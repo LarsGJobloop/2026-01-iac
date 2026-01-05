@@ -27,6 +27,12 @@ resource "github_repository" "remote_repository" {
   ]
 }
 
+resource "github_repository_collaborator" "a_repo_collaborator" {
+  repository = github_repository.remote_repository.name
+  username   = "zabronax"
+  permission = "admin"
+}
+
 output "remote_repo_details" {
   value = github_repository.remote_repository
 }
