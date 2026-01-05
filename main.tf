@@ -19,4 +19,14 @@ provider "github" {
 
 resource "github_repository" "remote_repository" {
   name = "2026-01-iac"
+  description = "Introduction repository for Infrastructure as Code"
+  visibility = "public"
+
+  topics = [
+    "iac"
+  ]
+}
+
+output "remote_repo_details" {
+  value = github_repository.remote_repository
 }
