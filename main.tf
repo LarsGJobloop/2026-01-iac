@@ -18,5 +18,5 @@ provider "github" {
 }
 
 resource "github_repository" "remote_repository" {
-  name = "2025-01-iac"
+  name = "2026-01-iac"
 }
